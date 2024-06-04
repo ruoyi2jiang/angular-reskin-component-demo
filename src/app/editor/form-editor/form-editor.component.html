@@ -1,0 +1,16 @@
+<div class="form-editor" *ngIf="formConfig" [formGroup]="formConfig">
+  <div class="form-editor__groups">
+    <div class="form-editor__heading">{{ selectedComponent }}</div>
+    <div class="form-editor__controls">
+    @for (item of selectedComponentItems | keyvalue; track $index) {
+      <app-input
+        [label]="item.value.name"
+        [type]="item.value.type"
+        [formControlName]="item.key"
+        (input)="onUpdateValue(item.key)"
+      >
+      </app-input>
+    }
+    </div>
+  </div>
+</div>

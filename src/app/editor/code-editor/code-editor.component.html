@@ -1,0 +1,9 @@
+<div class="code-editor">
+    <ngx-monaco-diff-editor
+        class="editor-window"
+        [options]="options"
+        [originalModel]="originalCodeModel()"
+        [modifiedModel]="modifiedCodeModel()"
+        (onInit)="onInitDiffEditor($event)"
+    ></ngx-monaco-diff-editor>
+</div>

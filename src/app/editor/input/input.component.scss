@@ -1,0 +1,16 @@
+label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+input[type=color] {
+  width: 24px;
+  border: 0 solid transparent;
+  outline: 0 solid transparent;
+
+  font-size: 14px;
+  color: white;
+}

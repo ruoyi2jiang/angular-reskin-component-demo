@@ -1,0 +1,41 @@
+:host {
+  display: flex;
+}
+
+.components-selection {
+  width: 280px;
+  height: 100vh;
+  background-color: #d9dfd7;
+  padding: 8px 12px;
+
+  &__lists {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    &--button {
+      cursor: pointer;
+    }
+  }
+}
+
+.preview {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.editor {
+  width: 800px;
+  height: 100vh;
+  background-color: #d9dfd7;
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: column;
+
+  &__toggle {
+    padding-bottom: 12px;
+    align-self: center;
+  }
+}

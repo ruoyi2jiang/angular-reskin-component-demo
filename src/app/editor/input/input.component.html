@@ -1,0 +1,13 @@
+<label>
+  {{ label }}
+  <input
+    #inputField
+    (input)="onValueChanged(inputField.value)"
+    [type]="type"
+    class="color-picker"
+    value="{{ value }}"
+  />
+  @if (type === 'range') {
+    <span>{{ value }}</span>
+  }
+</label>

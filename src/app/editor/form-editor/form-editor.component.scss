@@ -1,0 +1,13 @@
+.form-editor {
+  &__heading {
+    text-transform: capitalize;
+    font-size: 18px;
+    padding-bottom: 12px;
+  }
+
+  &__controls {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}

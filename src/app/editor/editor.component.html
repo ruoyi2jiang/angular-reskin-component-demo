@@ -1,0 +1,20 @@
+<div class="components-selection">
+  <h4 class="components-selection__header">Components</h4>
+  <div class="components-selection__lists">
+    <a class="components-selection__lists--button" role="button" (click)="componentName = 'button'">Button</a>
+  </div>
+</div>
+<div class="preview">
+  <app-button>Customise me</app-button>
+</div>
+<div class="editor">
+  <h4 class="editor__header">Customize CSS</h4>
+  <div class="editor__toggle">
+    <app-switch leftLabel="form" rightLabel="code" (updated)="codeView = $event"></app-switch>
+  </div>
+  @if (codeView) {
+    <app-code-editor></app-code-editor>
+  } @else {
+    <app-form-editor [component]="componentName"></app-form-editor>
+  }
+</div>

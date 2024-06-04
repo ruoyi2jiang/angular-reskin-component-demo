@@ -1,0 +1,17 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(var(--button_height) * 1px);
+  padding: calc(var(--button_padding-vertical) * 1px) calc(var(--button_padding-horizontal) * 1px);
+  background-color: var(--button_background-color);
+  color: var(--button_color);
+  font-size: calc(var(--button_font-size) * 1px);
+  border-radius: calc(var(--button_border-radius) * 1px);
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--button_hover-background-color);
+    color: var(--button_hover-color);
+  }
+}
